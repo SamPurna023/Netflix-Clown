@@ -1,0 +1,514 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: black;  
+}
+.main{
+    background-image: url("assets/images/bg.jpg");
+    background-position: center;    
+    background-size: calc(max(1200px, 115vw) * 1.1);
+    background-repeat: no-repeat;
+    height: 96vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.main .box{
+    height: 96vh;
+    width: 100%;
+    opacity: 40%;
+    position: absolute;
+    top: 0%;
+    background-color: black;
+    background: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.8), /* Solid black */
+        rgba(0, 0, 0, 0.5) 30%, /* Transparent black */
+        rgba(0, 0, 0, 0.5) 70%, /* Transparent black */
+        rgba(0, 0, 0, 0.8) /* Solid black */
+    );
+    opacity: 10; 
+     
+}
+
+nav{
+    display: flex;
+    max-width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    
+}
+
+nav img{
+    color: red;
+    position: relative;
+    z-index: 10;
+    
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+    height: 91%;
+    color: white;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1){
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 100px 0px 100px;
+    
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.button-container {
+    display: flex; /* Use Flexbox to align the buttons */
+    align-items: center; /* Center the buttons vertically */
+}
+
+.btn{
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+    padding: 6px 0px;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.422);
+    background: transparent;
+    font-weight: bold;
+    color: white;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1.6px solid rgba(128, 128, 128, 0.521);
+    box-shadow: none;
+    align-items: center;   
+}
+
+.btn-img-left{
+    margin-right: 8px;
+}
+.btn-img-right{
+    margin-left: 6px;
+    padding-top: 2px;
+    padding-right: 12px;
+}
+
+.btn-red-sm{
+    background-color: rgb(229, 9, 20);
+    padding: 9px 16px;
+    margin-left: 24px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    border: none;
+    box-shadow: none;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.btn-red-sm:hover{
+    background-color: rgb(146, 7, 7);
+}
+
+.btn-red{
+    background-color: rgb(229, 9, 20);
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding: 0.75rem 1.5rem;
+    height: 54px;
+    transition: background-color 1s;
+    cursor: pointer;
+}
+.btn-red:hover{
+    background-color: rgb(146, 7, 7);
+}
+
+.hero-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.main input{
+    font-size: 1rem;
+    padding: 16px 150px 16px 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #00000098;
+    border: 2px solid rgba(128, 128, 128, 0.578);
+    box-shadow: none;
+    font-weight: 500;
+    color: white;
+}
+
+.separation{
+    height: 8px;
+    background-color: rgb(64, 62, 62);
+    opacity: 80%;
+}
+
+
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 200px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+}
+
+.first h2{
+    max-width: 80vw;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+}
+
+.first p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 16px;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.tv-image {
+    display: block; 
+    width: 560px; 
+    z-index: 1;
+}
+
+.tv-video {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 73%; 
+    height: auto;
+    z-index: -2;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 200px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+}
+
+
+.image button {
+    position: relative;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+    width: 310px;
+    background-color: black;
+    border-radius: 15px;
+    border: 2.5px solid rgba(128, 128, 128, 0.578);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image button .button-content {
+    display: flex;
+    align-items: center;
+}
+
+.boxshot{
+    height: 80px;
+    padding: 8px 17px;
+    padding-left: 0px;
+}
+.gif{
+    height: 50px;
+    padding: 8px 17px;
+    padding-left: 50px;
+    padding-right: 0px;
+}
+
+.image button .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image button .text-container p {
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.image button .text-container .title {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.image button .text-container .status {
+    color: blue;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+.second h2{
+    max-width: 80vw;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+}
+
+.second p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 16px;
+}
+
+.phn {
+    display: block; 
+    width: 560px; 
+}
+
+.third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 200px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+}
+
+.third h2{
+    max-width: 80vw;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+}
+
+.third p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 16px;
+}
+
+.video-container {
+    position: relative;
+    display: inline-block; 
+}
+
+.monitor-image {
+    display: block; 
+    width: 560px; 
+    z-index: 1;
+}
+
+.apple-video {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 63%; 
+    height: auto;
+    z-index: -2;
+}
+
+
+.fourth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 200px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+}
+
+.fourth h2{
+    max-width: 80vw;
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: normal;
+    line-height: normal;
+}
+
+.fourth p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 16px;
+}
+
+.kids {
+    display: block; 
+    width: 560px; 
+}
+
+.faq {
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 72px;
+}
+.faq h2{
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.button-cont {
+    display: flex;
+    flex-wrap: wrap; /* Allows the buttons to wrap to the next line if they exceed the width */
+    justify-content: center; /* Centers the buttons within the container */
+    gap: 10px; /* Adds space between the buttons */
+    margin-top: 20px; /* Adds space between the heading and the buttons */
+}
+
+.button-cont button {
+    height: 85px;
+    width: 1170px;
+    padding: 24px 24px; /* Adjusts the padding of the buttons */
+    background-color: #333; /* Background color of the buttons */
+    color: white; /* Text color of the buttons */
+    border: none; /* Removes the default border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the buttons */
+    font-size: 16px; /* Sets the font size of the buttons */
+    display: flex; /* Use flexbox for button content alignment */
+    align-items: center; /* Center the content vertically */
+    justify-content: space-between; /* Adds space between text and image */
+    font-weight: 400;
+    font-size: 24px;
+    transition: background-color 1s;
+}
+
+.button-cont button:hover {
+    background-color: #555; /* Changes the background color of the buttons when hovered over */
+}
+
+.faq p{
+    font-weight: 400;
+    font-size: 20px;
+    padding: 24px;
+    padding-top: 50px;
+}
+
+.faq input{
+    font-size: 1rem;
+    padding: 16px 150px 16px 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #1d171798;
+    border: 2px solid rgba(128, 128, 128, 0.578);
+    box-shadow: none;
+    font-weight: 520;
+    color: white;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 72px;
+    margin-left: 200px;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-contact {
+    grid-column: span 4; /* Makes the contact div span all columns */
+    color: rgba(251, 251, 251, 0.727);
+    margin-bottom: 20px; /* Adds space below the contact div */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.footer-item a{
+    color: rgba(251, 251, 251, 0.727);
+}
+
+.footer-end {
+    grid-column: span 4; /* Makes the footer-end div span all columns */
+    color: rgba(251, 251, 251, 0.727);
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the start (left) */
+    margin-top: 10px; /* Adds some space above the footer-end */
+}
+
+.footer-end p {
+    margin: 0; 
+    font-size: 16px;
+}
